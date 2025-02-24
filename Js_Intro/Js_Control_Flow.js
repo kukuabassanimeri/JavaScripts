@@ -66,3 +66,41 @@ do
     count++;
 }
 while (count < 5);
+
+//* For in - loops through the properties of an Object
+//* SYNTAX - for (key in objects ) { code }
+let person = { name: "John", age: 30, city: "New York" };
+for (let property in person)
+{
+    console.log(property + " : " + person[property]);
+}
+//* Access the value of the property using object[property]
+
+//* for of - loops through values of iterable objects
+//* SYNTAX - for (variable of iterable) { code }
+
+let colors = ["red", "green", "blue"];
+for (let color of colors)
+{
+    console.log(color);
+}
+let language = "JavaScript";
+for (let char of language){
+    console.log(char);
+}
+
+//* For each - calls function for each element
+//* SYNTAX - variableName.forEach(function(element, index, array) { });
+//* variableName.forEach((element, index, array) => { });
+//* element - current item in array
+
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number) {
+    console.log(number);
+});
+
+//* Using arrow function
+let fruits = ["Mango", "Orange", "Banana", "Pineapple"];
+fruits.forEach((fruit) => {
+    console.log(fruit);
+});
