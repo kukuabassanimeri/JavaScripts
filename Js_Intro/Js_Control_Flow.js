@@ -57,8 +57,14 @@ switch (day)
 }
 console.log("Today is " + dayOfWeek);
 
+//* FOR LOOP - used to iterate over a block of code a certain number of times
+//* SYNTAX - for(initializer, condition, iterator){ statements }
+for (let i = 1; i <=5; i++){
+    console.log(i);
+}
+
 //* JAVASCRIPT DO WHILE - executes the statement at least once before evaluating the expression.
-//* SYNTAX DO - do { statements } while (expression);
+//* SYNTAX DO WHILE - do { statements } while (expression / condition);
 let count = 0;
 do
 {
@@ -67,6 +73,13 @@ do
 }
 while (count < 5);
 
+//* JAVASCRIPT FOR LOOP WITHOUT INITIALIZER
+//* SYNTAX - for (; ; ){ statement }
+
+let j = 1;
+for (; j < 10; j += 2){
+    console.log(j);
+}
 //* For in - loops through the properties of an Object
 //* SYNTAX - for (key in objects ) { code }
 let person = { name: "John", age: 30, city: "New York" };
@@ -104,3 +117,30 @@ let fruits = ["Mango", "Orange", "Banana", "Pineapple"];
 fruits.forEach((fruit) => {
     console.log(fruit);
 });
+
+//* BREAK STATEMENT - prematurely terminates loops
+//* SYNTAX - break[label];
+
+//* BREAK STATEMENT IN FOR LOOP
+for (let k = 1; k <= 10; k++){
+   console.log(k);
+}
+
+//* BREAK STATEMENT IN DO WHILE LOOP
+let m = 0;
+do {
+    m++;
+    console.log(m);
+    if( m === 3){
+        break;
+    }
+} while(m < 5);
+
+//* CONTINUE STATEMENT - skips the current iteration of the loop and proceeds to the next iteration
+//* CONTINUE STATEMENT IN FOR LOOP
+for (let a = 0; a < 10; a++){
+    if(a % 2 === 0){
+        continue;
+    }
+    console.log(a);
+}

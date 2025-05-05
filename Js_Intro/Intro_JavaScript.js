@@ -23,7 +23,7 @@ console.log(fullName);
 
 //* JAVASCRIPT MISCELLANEOUS OPERATORS
 
-//* Comma , - Evaluates multiple operands and returns the last operand
+//* Comma operator , - Evaluates multiple operands and returns the last operand
 let numbers = (2, 3, 4, 6);
 console.log(numbers);
 

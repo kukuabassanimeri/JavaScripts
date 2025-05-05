@@ -1,12 +1,12 @@
 //* DECLARING FUNCTION - use function keyword, functionName, list of Parameters and function body.
-//* FunctionName musst be in camelCase and start with verbs like getData()
+//* FunctionName must be in camelCase and start with verbs like getData()
 
 //* FUNCTION CALL - use functionName( arguments )
 function sum( a, b )
 {
     return a + b;
 }
-let result = sum( 5, 10 );
+let result = sum( 5, 10 ); //* function call
 console.log( result );
 
 //* JAVASCRIPT HOISTING - Using function or a variable before declaration.
@@ -33,7 +33,7 @@ function greetings(){
 //* An anonymous function is not accessible at its initial creation. You need to assign it a variable
 
 let myFunction = function() {
-    console.log("Hello World from JavaScript, this anonymous function");
+    console.log("Hello World from JavaScript, this is anonymous function");
 };
 myFunction();
 
@@ -67,11 +67,11 @@ let arrowFunctionNoArgs = () => "Arrow function with no arguments"; //* use empt
 console.log(arrowFunctionNoArgs());
 
 //* Arrow function with single argument
-let arrowFunctionSingleArg = num => num * num; //* use single argument and remove parentheses
+let arrowFunctionSingleArg = num => num * num; //* use single argument without parentheses
 console.log(arrowFunctionSingleArg(10));
 
 //* this keyword with arrow function - refers to the function where it is called in regular function
-//* But it is not associated with arrow function, but object that defines arrow function
+//* But it is not associated with arrow function, rather object that defines arrow function
 const myCar = {
     brand: "Toyota",
     showBrand: function() { //* Anonymous function

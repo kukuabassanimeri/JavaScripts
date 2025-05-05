@@ -33,6 +33,7 @@ class Lion extends Animal {
     }
 }
 
+//* create instance of lion
 let simba = new Lion("Simba", "Lion", "Animalia");
 simba.introduceLion();
 
@@ -46,6 +47,8 @@ class Person{
         console.log(`Hello, my name is ${this.name} and I am in my ${this.age}s`);
     }
 }
+
+//* create instance of person Abass
 let abass = new Person("Abass", 20, "Male");
 abass.greetAbass();
 

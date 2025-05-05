@@ -47,4 +47,47 @@ document.getElementById("p5").innerHTML = "The first paragraph in querySelector 
 //* Adjacent sibling selector + - selects the sibling element that immediately follows the previous sibling. let nextSibling = document.querySelector('p + a');
 //* pseudo class selector : - let listItem = document.querySelectorAll('li:nth-child(2)');
 
+//* TRAVESING ELEMENTS
 //* PARENTNODE - Is read only element
+
+//* Getting parent node
+let parent = node.parentNode;
+
+//* The Document and DocumentFragment nodes do not have a parent hence null parentNode
+let  note = document.querySelector(".node");
+console.log(note.parentNode);   
+
+//* Javascripts siblings
+
+//* get next sibling element
+let nextSibling = currentNode.nextElementSibling;
+
+let current = document.querySelector(".current");
+let next = current.nextElementSibling;
+console.log(next);
+
+//* get previous siblings
+let prevsibling = currentNode.previousElementSibling;
+let prev = current.previousElementSibling;
+console.log(prev);
+
+//* Get first child element
+let firstChild = parentElement.firstChild;
+
+let content = document.getElementById("menu");
+let first = content.firstChild.nodeName;
+console.log(first);
+
+//* or use
+let firstElementChild = parentElement.firstElementChild;
+
+//* Get last child element
+//*Syntax - let lastChild = parentElement.lastChild; or parentElement.lastElementChild;
+let menu = document.getElementById("menu");
+let last = menu.lastElementChild;
+
+//* get all child elements
+//* Syntax - let children = parentElement.childNodes; or let children = parentElement.children;
+let menuChild = document.getElementById('menu');
+let children = menuChild.children;
+console.log(children);
