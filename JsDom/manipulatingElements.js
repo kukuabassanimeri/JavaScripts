@@ -11,7 +11,7 @@ div.id = "divId";
 //* Add class to the div element
 div.className = "divClass";
 
-//* Add text to div element - use innerHTML or create a new Text node and append it to the div
+//* Add text to div element - use innerHTML, textContent, innerText, createTextNode or create a new Text node and append it to the div
 let div2 = document.createElement("div");
 div2.id = "divId";
 div2.className = "divClass";
@@ -68,7 +68,7 @@ main.appendChild(createMenuItem("Contact"));
 const p = document.querySelector("p");
 const h3 = document.createElement("h3");
 h3.textContent = "This is a heading created using before() method";
-p.before(h3);
+p.before(h3); //* insert h3 before p
 
 //* after method() - allows you to insert one or more nodes after the element
 //* Syntax - element.after(node); eg h2.after(p)
@@ -76,7 +76,7 @@ p.before(h3);
 const h5 = document.querySelector("h1");
 let p2 = document.createElement("p");
 p2.textContent = "This is a paragraph created using after() method";
-h5.after(p2);
+h5.after(p2); //* insert p after h5
 
 //* insertAdjacentHTML - parses a piece of HTML text and inserts the resulting nodes into the DOM tree at a specified position
 //* Syntax - element.insertAdjacentHTML(positionName, text);
