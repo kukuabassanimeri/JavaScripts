@@ -220,3 +220,16 @@ class Item {
   }
   let worker1 = new Workers('John', 'Developer');
   console.log(Workers[Symbol.hasInstance](worker1));
+
+  //* class
+  class User{
+    constructor(email, name){
+        this._id = email;
+        this._name = name;
+    }
+    greeting(){
+        return `Hi, my name is ${this._name}`;
+    }
+  }
+
+  export default User;

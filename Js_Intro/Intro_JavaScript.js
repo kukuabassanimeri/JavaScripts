@@ -47,3 +47,14 @@ console.log(timeupdate); //* undefined
 
 //* JAVASCRIPT NUMERIC SEPARATOR -  use _ to create a visual separation between groups of digits
 let fee = 100_000_000;
+
+//* user input
+alert("Hello World from JavaScript")
+let myNames = prompt("Enter your name: ");
+console.log(myNames);
+confirm("Are you sure you want to delete this?");
+
+//* Nullish Coalescing Operator ?? - accepts two values and returns the second value if the first one is null or undefined - A nullish value is a value that is either null or undefined.
+//* syntax - value1 ?? value2
+const urName = null ?? "John Doe";
+console.log(urName);
