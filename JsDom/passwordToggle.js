@@ -1,7 +1,7 @@
 const togglePassword = document.querySelector("#togglePassword");
 const password = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function() {
+togglePassword.addEventListener("click", function() { //*anonymous function
     if (password.type === "password") {
         password.type = "text";
     } else {

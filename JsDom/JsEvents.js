@@ -5,7 +5,7 @@ let btn = document.querySelector("#btn");
 function handleClick() {
     alert("The button was Click");
 }
-btn.addEventListener("click", handleClick);
+btn.addEventListener("click", handleClick); //* register event handler
 
 //* Event handling using anonymous function
 let btn2 = document.querySelector("#btn2");
@@ -21,3 +21,10 @@ btn3.addEventListener("click", () => {
 
 //* RemoveEventListener method - removes the event that was added. pass the same arguments that were added
 btn.removeEventListener("click", handleClick);
+
+//* prevent default - prevent the default behavior of an event
+let link = document.querySelector("a");
+link.addEventListener("click", function(e) {
+    e.preventDefault();
+    alert("The link was clicked");
+});
