@@ -59,19 +59,19 @@ console.log(myLocalData);
 //* Higher Order Functions - does at least one of the following
 //* Takes one or more functions as an argument or return a function as result
 
-//* forEach
+//* forEach - executes a function on each array element but does not return a new array
 import {posts } from "./JsObjects.js";
 posts.forEach((post) => {
     console.log(post);
 });
 
-//* filter
+//* filter - creates a new array containing only elements that pass a test
 const filteredPost = posts.filter((post) => {
     return post.userId === 1;
 });
 console.log(filteredPost);
 
-//* mapp
+//* map - creates a new array by applying a function to each element of an existing array
 const mappedPost = filteredPost.map((post) => {
     return post.id * 10;
 });
