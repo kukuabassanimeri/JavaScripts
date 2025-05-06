@@ -1,9 +1,10 @@
 //* JSON - JavaScript Object Notation
-//* use to send and receive data
+//* use to interchange data between a server and a web application
+//* JSON Files {key:value} or [{}, {}, {}]
 
 const myObj = {
   name: "Rahul",
-  hobbies: ["eat", "sleep", "code"],
+  hobbies: ["eat", "sleep", "code"], //* array of objects
   hello: function () {
     console.log("Hello Rahul");
   },
@@ -13,12 +14,12 @@ console.log(myObj.name);
 myObj.hello();
 console.log(typeof myObj);
 
-//* Convert JavaScript objects to JSON text 
+//* Convert JavaScript objects to JSON Strings
 const sendJSON = JSON.stringify(myObj);
 console.log(sendJSON); //* JSON doesnot send functions
 console.log(typeof sendJSON);
 
-//* Convert JSON text to JavaScript Objects
+//* Convert JSON strings to JavaScript Objects
 const receiveJSON = JSON.parse(sendJSON);
 console.log(receiveJSON);
 
@@ -82,3 +83,4 @@ const reducedPost = mappedPost.reduce((sum, post) => {
     return sum + post;
 });
 console.log(reducedPost);
+

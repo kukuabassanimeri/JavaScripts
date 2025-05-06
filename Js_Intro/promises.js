@@ -69,6 +69,8 @@ const ourPromise = new Promise((myResolve, myReject) => {
     console.log(value);
   });
 
+  
+
   //* Fetch API
   const users = fetch("https://jsonplaceholder.typicode.com/users");
 
