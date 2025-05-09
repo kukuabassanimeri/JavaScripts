@@ -73,6 +73,10 @@ const filteredPost = posts.filter((post) => {
 console.log(filteredPost);
 
 //* map - creates a new array by applying a function to each element of an existing array
+//* create a map - const variableName = new map()
+//* The set() - used to change existing Map values
+//* The get() - gets the value of a key in a Map
+
 const mappedPost = filteredPost.map((post) => {
     return post.id * 10;
 });
