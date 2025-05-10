@@ -1,0 +1,284 @@
+html{
+    /* specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box */
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* top navBar styling */
+nav{
+    background-color: #111; /* background color*/
+    color: #fff;
+    padding: 20px 50px; /* short cut css - p20. top bottom left right*/
+}
+.logo{
+    cursor: pointer;
+}
+.navTop{
+    display: flex; /* align items horizontally*/
+    align-items: center; /* center vertically */
+    justify-content: space-between; /* separate out the items*/
+}
+.searchIcon{
+    margin-left: 10px; /* gives spacing in the left */
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px; /* gives spacing b2n items*/
+    border-radius: 10px;
+}
+.searchInput{
+    border: none; /* removes the borders*/
+    background-color: transparent; /* removes background*/
+}
+.searchInput::placeholder{
+    color: lightgray;
+    font-size: 15px;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green; /* adds line in the bottom */
+    cursor: pointer;
+}
+
+/* nav bottom */
+.navBottom{
+    display: flex;
+    justify-content: center; /* place items in the middle of container */
+    align-items: center;
+}
+.menuItem{
+    margin-right: 20px; /* gives right spacing */
+    margin-top: 15px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+/* slider */
+.slider{
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    /* use unsplash to get free photos*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    overflow: hidden; /* specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area*/
+}
+.slider-wrap{
+    display: flex; /*aligs items horizontally */
+    width: 500vw; /*5 full screen items*/
+    transition: 1s ease-in-out;
+    
+}
+.slider-Item{
+    width: 100vw; /* takes full screen width */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative; /* adjusted element away from its normal position */
+}
+.slide-bg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+.slider-title{
+    position: absolute; /* positioned relative to the nearest positioned ancestor */
+    top: 10%;
+    right: 10%;
+    /* if using position absolute on child, parent should be position relative */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1; /* specifies the stack order of an element */
+    /* An element with greater stack order is always in front of an element with a lower stack order*/
+}
+
+.slider-price{
+    position: absolute; /* positioned relative to the nearest positioned ancestor */
+    top: 10%;
+    left: 10%;
+    /* if using position absolute on child, parent should be position relative */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* .slider-price:hover{
+    background-color: #fff;
+    color: #111;
+} */
+.slider-image{
+    z-index: 1;
+}
+
+.buy-button{
+    position: absolute; /*position relative to the nearest positioned ancestor */
+    top: 50%;
+    right: 10%;
+    /*if using position absolute on child, parent should be position relative */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 5px;
+}
+.buy-button:hover{
+    background-color: #fff;
+    color: #111;	
+}
+/* different background color for each slider */
+.slider-Item:nth-child(1) .slide-bg{
+    background-color: #369e62;
+    /* nth-child(n) pseudo-class matches any element that is the nth child of its parent
+    :nth-child(index | odd | even | an+b) {
+        css declarations;
+    }
+    the index of the first child is 1
+    Using a formula (an + b) - a represents an integer step size, n is all non negative integers, starting from 0, and b is an integer offset value.
+    */
+}
+.slider-Item:nth-child(2) .slide-bg{
+    background-color: rebeccapurple;
+}
+
+.slider-Item:nth-child(3) .slide-bg{
+    background-color: teal;
+}
+
+.slider-Item:nth-child(4) .slide-bg{
+    background-color: cornflowerblue;
+}
+
+.slider-Item:nth-child(5) .slide-bg{
+    background-color: rgb(124, 115, 80);
+}
+
+/* background for each price*/
+.slider-Item:nth-child(1) .slider-price{
+    background-color: #369e62;
+}
+.slider-Item:nth-child(2) .slider-price{
+    background-color: white;
+}
+.slider-Item:nth-child(3) .slider-price{
+    background-color: teal;
+}
+.slider-Item:nth-child(4) .slider-price{
+    background-color: cornflowerblue;
+}
+.slider-Item:nth-child(5) .slider-price{
+    background-color: cornsilk;
+}
+
+/* features */
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature-image{
+    width: 50px;
+    height: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column; /* displays the flex items vertically (from top to bottom */
+    align-items: center;
+    text-align: center;
+}
+.feature-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+.feature-description{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+/* product description */
+.product{
+    height: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+}
+.product-image{
+    width: 50%;
+}
+.product-details{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+.product-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-description{
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px; /* gives spacing to the bottom */
+}
+.product-price{
+    font-size: 16px;
+}
+.colors, .sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #111;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{ /*  matches any element that is the last child of its parent */
+    background-color: darkblue;
+    /* first-child - selects the element that is the first child of its parent */
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.product-button{
+    float: right; /* element floats to the right of its container */
+    /* float - property specifies how an element should float */
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}.product-button:hover{
+    color: #111;
+    background-color: #fff;
+}
