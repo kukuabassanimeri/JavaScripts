@@ -93,7 +93,7 @@ const currentProductSize = document.querySelectorAll('.size');
 menuItems.forEach(( item, index) => {
     item.addEventListener('click', () => {
         //* change current slide
-         //* re-position an element along the x-axis
+         //*TranslateX - re-position an element along the x-axis
         wrapper.style.transform = 'translateX(' + (index * -100) + 'vw)'; 
        
         //* change the choosen product
@@ -129,3 +129,17 @@ currentProductSize.forEach((size, index) => {
         size.style.color = 'white';
     });
 })
+
+//* product payment
+const productButton = document.querySelector(".product-button");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+//* add event listener
+productButton.addEventListener('click', () => {
+    payment.style.display = 'flex'; //* show the payment form
+});
+
+close.addEventListener('click', () => {
+    payment.style.display = 'none'; //* hide the payment form
+});

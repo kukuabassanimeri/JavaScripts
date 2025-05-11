@@ -1,21 +1,25 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike Store</title>
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!--Css link-->
     <link rel="stylesheet" href="shoeEcommerce.css">
 
 </head>
+
 <body>
     <!--Generate html templete - use doc or ! -->
-    
+
     <!--NavBar -->
-    <nav>
+    <nav id="nav-bar">
         <!--top navBar-->
         <div class="navTop">
             <!--Logo-->
@@ -66,7 +70,7 @@
                 <img src="nikeStore/jordan.png" alt="jordan shoe" class="slider-image">
                 <div class="slide-bg"></div>
                 <h1 class="slider-title">AIR JORDAN<br> NEW <br> SEASON</h1>
-                <h2 class="slider-price">$149</h2>
+                <h2 class="slider-price" id="jordan">$149</h2>
                 <a href="#product">
                     <button class="buy-button">BUY NOW</button>
                 </a>
@@ -144,26 +148,177 @@
         <div class="product-details">
             <h1 class="product-title">AIR FORCE</h1>
             <h2 class="product-price">$119</h2>
-            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt illum minus ad nemo nulla corporis. Fugit aspernatur temporibus debitis, vero, eos vel inventore asperiores ad est eum suscipit quos.</p>
+            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt illum
+                minus ad nemo nulla corporis. Fugit aspernatur temporibus debitis, vero, eos vel inventore asperiores ad
+                est eum suscipit quos.</p>
 
-        <!--product color-->
-        <div class="colors">
-            <div class="color"></div>
-            <div class="color"></div>
+            <!--product color-->
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+
+            <!--product sizes-->
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>
+            </div>
+
+            <!--Buy button-->
+            <button class="product-button">BUY NOW</button>
         </div>
 
-        <!--product sizes-->
-        <div class="sizes">
-            <div class="size">42</div>
-            <div class="size">43</div>
-            <div class="size">44</div>
+        <!--Payment details-->
+        <div class="payment">
+            <h1 class="payment-title">Personal Info!</h1>
+            <label>Name & Surname</label>
+            <input type="text" class="payment-input" placeholder="Enter full name">
+
+            <label>Phone Number</label>
+            <input type="text" class="payment-input" placeholder="Enter phone number">
+
+            <label>Address</label>
+            <input type="text" class="payment-input" placeholder="Enter address">
+
+            <!--card info!-->
+            <h1 class="payment-title">Card Info!</h1>
+            <div class="card-icons">
+                <img src="nikeStore/visa.png" alt="Visa card" class="card-icon" width="40px">
+                <img src="nikeStore/master.png" alt="Mastercard" class="card-icon" width="40px">
+            </div>
+
+            <!--payment input-->
+            <input type="password" class="payment-input" placeholder="Card number">
+            <div class="card-info">
+                <input type="text" class="payment-input sm" placeholder="mm">
+                <input type="text" class="payment-input sm" placeholder="yyyy">
+                <input type="text" class="payment-input sm" placeholder="cvv">
+            </div>
+
+            <!--payment button-->
+            <button class="pay-button">Check Out</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+
+    <!--Gallery-->
+    <div class="gallery">
+        <div class="gallery-item">
+            <h1 class="gallery-title">Be Yourself</h1>
+            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="Gallery image" class="gallery-image">
         </div>
 
-        <!--Buy button-->
-        <button class="product-button">BUY NOW</button>
-    </div>
+        <div class="gallery-item">
+            <h1 class="gallery-title">This is the first day of your life</h1>
+            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="Gallery image" class="gallery-image">
+        </div>
+
+        <div class="gallery-item">
+            <h1 class="gallery-title">Just do it!</h1>
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="Gallery image" class="gallery-image">
+        </div>
     </div>
 
+    <!--new season-->
+    <div class="new-season">
+        <div class="new-season-item">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="new season image" class="new-season-image">
+        </div>
+
+        <!--new season descriptions-->
+        <div class="new-season-item">
+            <h3 class="new-season-title">WINTER ARRIVALS</h3>
+            <h1 class="new-season-title">New season</h1>
+            <h1 class="new-season-title">New collections</h1>
+            <a href="#nav-bar">
+                <button class="new-season-button">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+
+        <div class="new-season-item">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="new season image" class="new-season-image">
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <!--Footer left-->
+        <div class="footer-left">
+            <div class="footer-menu">
+
+                <!--About us-->
+                <h1 class="footer-menu-title">About Us</h1>
+                <ul class="footer-menu-list">
+                    <li class="footer-list-item">Company</li>
+                    <li class="footer-list-item">Contact</li>
+                    <li class="footer-list-item">Careers</li>
+                    <li class="footer-list-item">Affiliates</li>
+                    <li class="footer-list-item">Stores</li>
+                </ul>
+            </div>
+
+            <!--Contact-->
+            <div class="footer-menu">
+                <h1 class="footer-menu-title">Useful Links</h1>
+                <ul class="footer-menu-list">
+                    <li class="footer-list-item">Support</li>
+                    <li class="footer-list-item">Refund</li>
+                    <li class="footer-list-item">FQA</li>
+                    <li class="footer-list-item">Feedback</li>
+                    <li class="footer-list-item">Stores</li>
+                </ul>
+            </div>
+
+            <!--Our products-->
+            <div class="footer-menu">
+                <h1 class="footer-menu-title">Products</h1>
+                <ul class="footer-menu-list">
+                    <li class="footer-list-item">Air Force</li>
+                    <li class="footer-list-item">Air Jordan</li>
+                    <li class="footer-list-item">Blazer</li>
+                    <li class="footer-list-item">Crater</li>
+                    <li class="footer-list-item">Hippie</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--footer Right-->
+        <div class="footer-right">
+
+            <!--Subscriptions-->
+            <div class="footer-right-menu">
+                <h1 class="footer-menu-title">Subscribe to our newsletter</h1>
+                <div class="footer-email">
+                    <input type="text" class="footer-input" placeholder="Email Address">
+                    <button class="footer-button">Join!</button>
+                </div>
+            </div>
+
+            <div class="footer-right-menu">
+                <h1 class="footer-menu-title">Follow Us</h1>
+
+                <!--Social media links-->
+                <div class="footer-icons">
+                    <img src="nikeStore/facebook.png" alt="Footer" class="footer-icon">
+                    <img src="nikeStore/twitter.png" alt="Twitter" class="footer-icon">
+                    <img src="nikeStore/instagram.png" alt="Instagram" class="footer-icon">
+                    <img src="nikeStore/whatsapp.png" alt="Whatsapp" class="footer-icon">
+                </div>
+
+                <!--Copy right-->
+                <div class="footer-right-menu">
+                    <span class="copy-right">@abass jDev | All rights reserved. 2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="shoeEcommerce.js"></script>
 </body>
+
 </html>
