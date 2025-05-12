@@ -497,9 +497,13 @@ footer{
 @media screen and ( max-width:480px ) { /* Any screen less than 480 */
     nav{
         padding: 20px;
+        margin-bottom: 10px;
     }
     .searchBar{
         display: none;
+    }
+    .limitedOffer{
+        font-size: 16px;
     }
     .navBottom{
         flex-wrap: wrap; /* move items to the next line */
@@ -507,7 +511,7 @@ footer{
     .menuItem{
         margin: 20px;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
     }
     .slider{
         clip-path: none;
@@ -556,11 +560,18 @@ footer{
     .gallery{
         display: none;
     }
+    
     .new-season{
         flex-direction: column;
+        margin-top: 180px;
     }
     .new-season-item{
         margin-bottom: 10px;
+        border-radius: 15px;
+    }
+  
+    .colors{
+        margin-top: 20px;
     }
     footer{
         flex-direction: column;
