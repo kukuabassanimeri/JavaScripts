@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+/* container */
+.container{
+    display: flex;
+    padding: 50px;
+}
+
+/* left menu */
+.left-menu{
+    flex: 1;
+}
+
+.search-input{
+    padding: 10px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.search-input::placeholder{
+    font-size: 16px;
+}
+h1{
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* gives spaces between items */
+}
+.category{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* content menu */
+.content-menu{
+    flex: 4;
+}
+.products{
+    display: flex; /* Align items horizontal */
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.product{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.product-image{
+    width: 100px;
+    height: 200px;
+    object-fit: contain; /* The image keeps its aspect ratio, but is resized to fit within the given dimension */
+
+    /* object-fit property is used to specify how an <img> or <video> should be resized to fit its container */
+}
+
+.product-name{
+    font-weight: 300;
+}
