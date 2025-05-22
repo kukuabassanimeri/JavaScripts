@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* Nav bar content */
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 0px 50px;
+    
+}
+.nav-bar-container{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+}
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-size: 20px;
+    color: #4dbf00;
+    cursor: pointer;
+}
+.menu-container{
+    flex: 6;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+.menu-list-item{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.menu-list-item.active{
+    font-weight: bold;
+}
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.profile-text-container{
+    margin: 0 20px;
+}
+.profile-pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.toggle-icon{
+    color: goldenrod;
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    transition: 1s ease all;
+}
+.side-bar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+}
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* body content */
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px); /* The height overflow, so substract nav bar height */
+    color: white;
+}
+.content-container{
+    margin-left: 50px;
+}
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+}
+.featured-title{
+    width: 200px;
+}
+.featured-desc{
+    width: 500px;
+    color: lightgray;
+    margin: 50px 0;
+}
+
+.featured-button{
+    background-color: #4dbf00;
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.movie-list-container{
+    padding: 20px 50px;
+}
+.movie-list{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item{
+    margin-right: 5px;
+    position: relative;
+    width: 25%;
+    flex-shrink: 0;
+}
+.movie-list-image{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item:hover .movie-list-image{
+    transform: scale(1.2);
+    margin: 0 10px;
+    opacity: 0.5;
+}
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+.movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 200px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    opacity: 0; 
+}
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.arrow{
+    font-size: 50px;
+    position: absolute;
+    top: 125px;
+    right: 20px;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Theme color */
+.container.active{
+    background-color: white;
+}
+.movie-list-item-title.active{
+    color: black;
+}
+.nav-bar.active{
+    background-color: white;
+}
+.nav-bar-container.active{
+    color: black;
+}
+.side-bar.active{
+    background-color: white;
+}
+.left-menu-icon.active{
+    color: black;
+}
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+/* responsiveness */
+@media only screen and (max-width: 940px) {
+    .menu-container{
+        display: none;
+    }
+}
