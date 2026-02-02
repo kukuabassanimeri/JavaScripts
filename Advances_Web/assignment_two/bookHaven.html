@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Haven</title>
+    <link rel="stylesheet" href="bookHaven.css" />
+    <script src="https://kit.fontawesome.com/caeb9ec53e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>BookHaven</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-books">Books</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content" id="home">
+            <h1>Welcome to BookHaven</h1>
+            <p>Discover your next favorite book with us. Whether you love fiction, non-fiction, romance, or science,
+                we’ve got you covered.</p>
+            <p>Our collection is updated daily, so make sure to check back often!</p>
+
+            <!-- BOOKS GO HERE -->
+            <div id="books">
+                <h4 class="sub-title" id="our-books">Our Books</h4>
+                <div class="book-list">
+                    <div class="book-item book">
+                        <img src="books/Adoll.png" alt="A Doll's House" />
+                        <div class="book-layerout">
+                            <h4>A Doll's House</h4>
+                            <small>Henrik Ibsen</small>
+                            <p>A Doll's House is a three-act play <span class="more-text">written by Norwegian
+                                    playwright Henrik Ibsen. It premiered at the Royal Danish Theatre in Copenhagen,
+                                    Denmark, on 21 December 1879, having been published earlier that month.</span>
+                                <button class="toggle-btn">Read more</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="book-item book">
+                        <img src="books/blossom.jpeg" alt="Blossom" />
+                        <div class="book-layerout">
+                            <h4>Blossom Of Savannah</h4>
+                            <small>Henry ole Kulet</small>
+                            <p>Blossoms of the Savannah is <span class="more-text">a novel by Henry ole Kulet that tells
+                                    the story of two sisters, Taiyo and Resian, who are on the verge of womanhood and
+                                    face a conflict between their personal ambitions and the expectation to undergo
+                                    Female Genital Mutilation (FGM) and early marriage within their Nasila
+                                    culture.</span>
+                                <button class="toggle-btn">Read more</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="book-item book">
+                        <img src="books/campus.png" alt="Campus Diary" />
+                        <div class="book-layerout">
+                            <h4>Campus Diary</h4>
+                            <small>JB Omukangala</small>
+                            <p>Campus diary is a romantic novel <span class="more-text">written by JB Omukangala, It
+                                    revolves about campus students who do fall in love while on Campus.</span>
+                                <button class="toggle-btn">Read more</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="book-item book">
+                        <img src="books/marriage.jpeg" alt="Marriage of Dolls" />
+                        <div class="book-layerout">
+                            <h4>Marriage of Dolls</h4>
+                            <small>JB Omukangala</small>
+                            <p>Marriage is Dolls is a novel written <span class="more-text">by JB Omukangala. It address
+                                    marriage among the populace of Kenya.</span>
+                                <button class="toggle-btn">Read more</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="book-item book">
+                        <img src="books/kigogo.jpeg" alt="Kigogo" />
+                        <div class="book-layerout">
+                            <h4>Kigogo</h4>
+                            <small>Pauline Kea</small>
+                            <p>Tamthilia ya Kigogo inamulika baadhi <span class="more-text">ya masuala yanayoibuka
+                                    katika nchi zinazoendelea za Bara la Afrika. Huku wakazi wa Sagamoyo wakijiandaa
+                                    kuadhimisha.</span>
+                                <button class="toggle-btn">Read more</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="book-item book">
+                        <img src="books/tumbo.jpeg" alt="Tumbo Lisiloshiba" />
+                        <div class="book-layerout">
+                            <h4>Tumbo Lisiloshiba</h4>
+                            <small>Chokocho Alifa</small>
+                            <p>Tumbo Lisiloshiba na Hadithi Nyingine <span class="more-text">ni mkusanyo wa hadithi fupi
+                                    zilizoandikwa na waandishi waliobobea na wale wanaochipuka katika uandishi wa
+                                    utanzu.</span>
+                                <button class="toggle-btn">Read more</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Email Subscription-->
+            <div class="newsletter" id="subscribe">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form id="subscribe-form">
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                    <span id="email-error" class="error-message"></span>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="bookHaven.js"></script>
+</body>
+
+</html>

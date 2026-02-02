@@ -4,6 +4,7 @@ class Animal {
     constructor(name, species) { //* constructor keyword must be used
         this.name = name;
         this.species = species;
+        //* The constructor function is called automatically when the object is initialized
     }
 
     //* Method to introduce the animal
@@ -12,7 +13,7 @@ class Animal {
     }
 }
 
-//* Create an instance of the Animal class
+//* Create an instance / object of the Animal class
 let lion = new Animal("Lion", "Panthera leo"); //*Use new to create an instance
 lion.introduce();
 
@@ -23,8 +24,8 @@ tiger.introduce();
 
 class Lion extends Animal {
     constructor(name, species, kingdom) {
-        super(name, species); //* super keyword point to what you are inheriting from parent class
-        this.kingdom = kingdom;
+        super(name, species); //* super keyword points to what you are inheriting from parent class
+        this.kingdom = kingdom; //* kingdom is a property of lion & not Animal.
     }
     //* Method to introduce the lion
     introduceLion() {

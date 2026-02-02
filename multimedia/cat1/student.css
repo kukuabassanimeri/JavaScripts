@@ -1,0 +1,10 @@
+.next-button{
+    display: inline-block;
+}
+#computeBtn{
+    display: none;
+}
+
+.container{
+    max-width: 400px;
+}

@@ -1,8 +1,12 @@
-//* Modules 
+//* Modules  - allow breaking up of codes into separate files. Making it easier to maintain the code base
+//* Module is simply a file. 
+
+//* import default export - do not have curly brace.
 import playGuitar from "./jsmodule.js";
 console.log(playGuitar());
 
 //* import named exports
+//* named exports must be destructed using curly braces
 import { shredding, plucking } from "./jsmodule.js";
 
 //* rename the imported functions
@@ -11,7 +15,7 @@ console.log(shredding());
 console.log(plucking());
 
 //* import all
-import * as Guitar from "./jsmodule.js";
+import * as Guitar from "./jsmodule.js"; //* It can be with or without .js extension. 
 console.log(Guitar.shredding());
 
 //* exporting class

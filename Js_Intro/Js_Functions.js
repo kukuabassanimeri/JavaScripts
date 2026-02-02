@@ -72,6 +72,8 @@ console.log(arrowFunctionSingleArg(10));
 
 //* this keyword with arrow function - refers to the function where it is called in regular function
 //* But it is not associated with arrow function, rather object that defines arrow function
+//* this with regular function - represent the object that calls the function.
+
 const myCar = {
     brand: "Toyota",
     showBrand: function() { //* Anonymous function

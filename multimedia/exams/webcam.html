@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam</title>
+</head>
+
+<body>
+    <video id="prev" autoplay></video><br>
+    <video id="rec" controls></video><br>
+
+    <button onclick="start()">Start</button>
+    <button onclick="rec.pause()">Pause</button>
+    <button onclick="rec.currentTime+=2">Forward</button>
+    <button onclick="rec.currentTime-=2">Rewind</button>
+    <button onclick="save()">Download</button>
+
+    <script src="webcam.js"></script>
+</body>
+
+</html>

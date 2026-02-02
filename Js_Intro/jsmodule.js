@@ -11,4 +11,5 @@ const plucking = () =>{
 };
 
 export default playGuitar; //* only one default export
-export {shredding, plucking}; //* export all the functions - multiple named exports
+
+export {shredding, plucking}; //* export all the functions - multiple named exports. The functions should be in the curly braces. 

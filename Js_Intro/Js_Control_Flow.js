@@ -112,7 +112,7 @@ numbers.forEach(function(number) {
     console.log(number);
 });
 
-//* Using arrow function
+//* Using arrow function. Arrow function is used to write shorter functions
 let fruits = ["Mango", "Orange", "Banana", "Pineapple"];
 fruits.forEach((fruit) => {
     console.log(fruit);
