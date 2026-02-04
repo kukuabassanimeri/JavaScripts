@@ -137,3 +137,33 @@ console.log(`Sum of 7 and default value (5) is: ${result}`);
 //* use default values for x and y
 result = sum();
 console.log(`Sum of default values (3 and 5) is: ${result}`);
+
+//* CallBack function
+function myGreetings(name, callback){
+    console.log('Hello' + '' + name);
+    callback();
+}
+
+//* Define the callBack function'
+function callMe(){
+    console.log('I am a call Back function');
+}
+
+//* Call the function & pass in callBack function as an argument.
+myGreetings('Cici', callMe);
+
+//* Asynchronous Callback
+function fetchData(callback){
+    setTimeout(() => {
+        const data = {id: 1, name: 'Álice'};
+        console.log('Data is fetched!');
+
+        //* Callback function is executed after 2 seconds.
+        callback()
+    }, 2000);
+}
+
+//* Call the function
+fetchData((data) => {
+    console.log('Data is received and processed', data);
+})

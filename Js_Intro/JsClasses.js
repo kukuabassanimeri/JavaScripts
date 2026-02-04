@@ -234,3 +234,19 @@ class Item {
   }
 
   export default User;
+
+//* Proxy - use to wrap an object & redefine various operation into the object.
+let student1 = {
+    age: 20,
+    name: 'Felix'
+}
+const handler = {
+    get: function(obj, prop){
+        return obj[prop]? obj[prop] : 'property does not exist';
+    }
+}
+
+//* Create the proxy
+const proxy = new Proxy(student1, handler);
+console.log(proxy.name);
+console.log(proxy.age);

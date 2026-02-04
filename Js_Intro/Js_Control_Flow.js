@@ -103,8 +103,8 @@ for (let char of language){
 }
 
 //* For each - calls function for each element
-//* SYNTAX - variableName.forEach(function(element, index, array) { });
-//* variableName.forEach((element, index, array) => { });
+//* SYNTAX - variableName.forEach(function(element, index, array) { }); ...normal function
+//* variableName.forEach((element, index, array) => { }); ...arrow function
 //* element - current item in array
 
 let numbers = [1, 2, 3, 4, 5];
